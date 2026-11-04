@@ -1,0 +1,274 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Practical</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container my-4 p-4 bg-white shadow rounded-3">
+
+    <h1 class="text-center text-primary mb-4">Bootstrap 5 Practical</h1>
+
+    <!-- 1. Borders -->
+    <h3>1. Borders</h3>
+    <div class="border border-primary border-3 rounded p-3 mb-3">
+        Primary Border
+    </div>
+    <div class="border-top border-bottom border-danger p-2 mb-3">
+        Top and Bottom Border
+    </div>
+    <div class="border-0 p-2">Border Removed</div>
+
+    <!-- 2. Border Radius -->
+    <h3>2. Border Radius</h3>
+    <img src="https://placehold.co/100x100"
+         class="rounded me-2" alt="Rounded">
+    <img src="https://placehold.co/100x100"
+         class="rounded-circle me-2" alt="Circle">
+    <button class="btn btn-success rounded-pill">Pill Button</button>
+    <div class="border rounded-3 p-3 mt-3">Rounded Box</div>
+
+    <!-- 3. Interactions -->
+    <h3 class="mt-4">3. Interactions</h3>
+    <p class="user-select-all">Select all this text with a click.</p>
+    <p class="user-select-none">This text cannot be selected normally.</p>
+    <a href="#" class="pe-none">Disabled pointer link</a> |
+    <a href="#" class="pe-auto">Active pointer link</a>
+
+    <!-- 4. Overflow -->
+    <h3 class="mt-4">4. Overflow</h3>
+    <div class="overflow-auto border p-2 mb-2" style="height:70px">
+        This box uses overflow-auto. Add more content to see scrolling.
+        This is extra content. This is extra content.
+        This is extra content. This is extra content.
+    </div>
+    <div class="overflow-hidden border p-2 mb-2" style="height:40px">
+        Overflow hidden hides content outside the box.
+        Extra extra extra content beyond the box.
+    </div>
+    <div class="overflow-visible border p-2 mb-2" style="height:40px">
+        Overflow visible can show content outside the box.
+    </div>
+    <div class="overflow-scroll border p-2" style="height:60px">
+        Overflow scroll. Extra content appears here.
+        More content. More content. More content.
+    </div>
+
+    <!-- 5. Position -->
+    <h3 class="mt-4">5. Position</h3>
+    <div class="position-relative bg-light border" style="height:100px">
+        <span class="position-absolute top-0 start-0 bg-primary text-white p-1">Top Left</span>
+        <span class="position-absolute top-0 end-0 bg-danger text-white p-1">Top Right</span>
+        <span class="position-absolute bottom-0 start-0 bg-success text-white p-1">Bottom Left</span>
+        <span class="position-absolute bottom-0 end-0 bg-dark text-white p-1">Bottom Right</span>
+        <span class="position-absolute top-50 start-50 translate-middle bg-warning p-1">Center</span>
+    </div>
+    <button class="btn btn-primary position-relative mt-3">
+        Messages
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            5
+        </span>
+    </button>
+    <div class="position-static mt-2">Position Static</div>
+    <div class="position-sticky top-0 bg-warning p-2 mt-2">Position Sticky Example</div>
+    <div class="position-fixed bottom-0 end-0 m-3 badge bg-dark">Fixed</div>
+
+    <!-- 6. Shadows -->
+    <h3 class="mt-4">6. Shadows</h3>
+    <div class="shadow-none p-3 mb-2">No Shadow</div>
+    <div class="shadow-sm p-3 mb-2">Small Shadow</div>
+    <div class="shadow p-3 mb-2">Normal Shadow</div>
+    <div class="shadow-lg p-3 mb-2">Large Shadow</div>
+
+    <!-- 7. Sizing -->
+    <h3 class="mt-4">7. Sizing</h3>
+    <div class="bg-primary text-white w-25 p-2 mb-2">Width 25%</div>
+    <div class="bg-success text-white w-50 p-2 mb-2">Width 50%</div>
+    <div class="bg-danger text-white w-75 p-2 mb-2">Width 75%</div>
+    <div class="bg-dark text-white w-100 p-2">Width 100%</div>
+    <div class="border mt-2 p-2" style="height:100px">
+        <div class="bg-info h-50 p-2">Height 50%</div>
+    </div>
+
+    <!-- 8. Spacing -->
+    <h3 class="mt-4">8. Spacing</h3>
+    <div class="bg-info m-3 p-3">Margin 3 and Padding 3</div>
+    <div class="bg-warning mt-2 mb-3 px-4 py-2">Top/Bottom Margin and Horizontal/Vertical Padding</div>
+    <div class="d-flex gap-3">
+        <div class="bg-primary text-white p-2">Item 1</div>
+        <div class="bg-success text-white p-2">Item 2</div>
+    </div>
+
+    <!-- 9. Text Utilities -->
+    <h3 class="mt-4">9. Text Utilities</h3>
+    <p class="text-start">Left aligned text</p>
+    <p class="text-center">Center aligned text</p>
+    <p class="text-end">Right aligned text</p>
+    <p class="text-wrap border">This text wraps inside its container.</p>
+    <p class="text-nowrap overflow-auto border">This text does not wrap easily.</p>
+    <p class="text-lowercase">BOOTSTRAP TEXT</p>
+    <p class="text-uppercase">bootstrap text</p>
+    <p class="text-capitalize">bootstrap practical classes</p>
+    <p class="fs-1">Font Size 1</p>
+    <p class="fst-italic">Italic Text</p>
+    <p class="text-decoration-underline">Underlined Text</p>
+    <p class="text-reset">Reset Text Color</p>
+
+    <!-- 10. Accordion -->
+    <h3 class="mt-4">10. Accordion</h3>
+    <div class="accordion accordion-flush" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse"
+                        data-bs-target="#panel1">
+                    What is Bootstrap?
+                </button>
+            </h2>
+            <div id="panel1" class="accordion-collapse collapse show"
+                 data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                    Bootstrap is a CSS framework for responsive websites.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#panel2">
+                    What is HTML?
+                </button>
+            </h2>
+            <div id="panel2" class="accordion-collapse collapse"
+                 data-bs-parent="#myAccordion">
+                <div class="accordion-body">HTML structures a webpage.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 11. Alerts -->
+    <h3 class="mt-4">11. Alerts</h3>
+    <div class="alert alert-primary">Primary Alert</div>
+    <div class="alert alert-secondary">Secondary Alert</div>
+    <div class="alert alert-success">Success Alert</div>
+    <div class="alert alert-danger">Danger Alert</div>
+    <div class="alert alert-warning">Warning Alert</div>
+    <div class="alert alert-info">Information Alert</div>
+    <div class="alert alert-light border">Light Alert</div>
+    <div class="alert alert-dark">Dark Alert</div>
+
+    <!-- 12. Badges -->
+    <h3 class="mt-4">12. Badges</h3>
+    <h4>Notifications <span class="badge bg-success">New</span></h4>
+    <button class="btn btn-primary">
+        Inbox <span class="badge bg-danger">4</span>
+    </button>
+    <button class="btn btn-dark position-relative ms-2">
+        Notifications
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9+</span>
+    </button>
+    <span class="badge rounded-pill bg-warning text-dark ms-2">Pill Badge</span>
+
+    <!-- 13. Breadcrumb -->
+    <h3 class="mt-4">13. Breadcrumb</h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Courses</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+        </ol>
+    </nav>
+
+    <!-- 14. Button Group -->
+    <h3 class="mt-4">14. Button Group</h3>
+    <div class="btn-group" role="group" aria-label="Options">
+        <button class="btn btn-primary">Home</button>
+        <button class="btn btn-success">About</button>
+        <button class="btn btn-danger">Contact</button>
+    </div>
+
+    <!-- 15. Collapse -->
+    <h3 class="mt-4">15. Collapse</h3>
+    <button class="btn btn-info" data-bs-toggle="collapse"
+            data-bs-target="#moreInfo">
+        Show / Hide Details
+    </button>
+    <div class="collapse mt-2" id="moreInfo">
+        <div class="card card-body">
+            This content appears and disappears when the button is clicked.
+        </div>
+    </div>
+
+    <!-- 16. List Group -->
+    <h3 class="mt-4">16. List Group</h3>
+    <ul class="list-group mb-3">
+        <li class="list-group-item active">Active Item</li>
+        <li class="list-group-item">Normal Item</li>
+        <li class="list-group-item disabled">Disabled Item</li>
+        <li class="list-group-item list-group-item-success">Success Item</li>
+        <li class="list-group-item list-group-item-warning">Warning Item</li>
+        <li class="list-group-item list-group-item-danger">Danger Item</li>
+        <li class="list-group-item list-group-item-info">Info Item</li>
+        <li class="list-group-item list-group-item-primary">Primary Item</li>
+        <li class="list-group-item list-group-item-secondary">Secondary Item</li>
+        <li class="list-group-item list-group-item-dark">Dark Item</li>
+        <li class="list-group-item list-group-item-light">Light Item</li>
+    </ul>
+
+    <div class="list-group list-group-horizontal mb-3">
+        <a href="#" class="list-group-item list-group-item-action">Home</a>
+        <a href="#" class="list-group-item list-group-item-action">About</a>
+        <a href="#" class="list-group-item list-group-item-action">Contact</a>
+    </div>
+
+    <ul class="list-group list-group-flush mb-3">
+        <li class="list-group-item">Flush Item 1</li>
+        <li class="list-group-item">Flush Item 2</li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Messages <span class="badge bg-primary rounded-pill">12</span>
+        </li>
+    </ul>
+
+    <!-- 17. Modal -->
+    <h3 class="mt-4">17. Modal</h3>
+    <button class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#myModal">
+        Open Modal
+    </button>
+
+    <div class="modal fade" id="myModal" tabindex="-1"
+         aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Bootstrap Modal</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is a Bootstrap 5 modal dialog.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
